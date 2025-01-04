@@ -12,10 +12,11 @@ output:
     css: custom.css
 ---
 
-
-
 <style>
-/* Custom CSS for a professional and centered layout */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* General Body Styling */
 body {
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -23,10 +24,29 @@ body {
   color: #333;
 }
 
-h1, h2, h3 {
+/* Section Titles */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  font-weight: bold;
   color: #2c3e50;
 }
 
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8em;
+  color: #34495e;
+  margin-top: 20px;
+}
+
+/* Container Styling */
 .container {
   margin: auto;
   padding: 20px;
@@ -36,12 +56,14 @@ h1, h2, h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Image Styling */
 img {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 100%;
 }
 
+/* Link Styling */
 a {
   color: #3498db;
   text-decoration: none;
