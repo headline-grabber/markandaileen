@@ -1,6 +1,4 @@
 ---
-title: "Save the Date"
-author: "Mark & Aileen"
 output: 
   html_document:
     theme: cerulean
@@ -19,19 +17,35 @@ output:
 /* General Body Styling */
 body {
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Playfair Display', serif;
   background-color: #f8f9fa;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Title Styling */
+.main-title {
+  background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+  padding: 50px 20px;
+  border-bottom: 3px solid #2c3e50;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  text-shadow: 2px 2px #bdc3c7;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* Section Titles */
-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 4em;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
 h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 3em;
@@ -56,11 +70,29 @@ h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Divider Line Styling */
+hr {
+  border: 0;
+  height: 1px;
+  background: #34495e;
+  margin: 20px 0;
+}
+
 /* Image Styling */
 img {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 100%;
+  display: block;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid #ffffff;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 /* Link Styling */
@@ -77,16 +109,18 @@ a:hover {
 </style>
 
 <div class="container">
-  <h2>15/11/2025</h2>
+  <h2>The Wedding of Aileen Hanson and Mark Sheridan</h2>
+  <h3>15/11/2025</h3>
   <h3>Harveys Point, Donegal</h3>
   <p><a href="https://www.harveyspoint.com">Visit Harveys Point</a></p>
-
-  <img src="savethedate.png" alt="Save the Date">
+  <hr>
 
   <h3>We’re thrilled to announce our wedding!</h3>
   <p>Mark your calendars and join us for this special day.</p>
-  <p>Official invitations will be sent out in a few months.  
-     We look forward to celebrating with you!</p>
+  <p>Official invitations will be sent out in a few months. We look forward to celebrating with you!</p>
+
+  <hr>
+  <img src="savethedate.png" alt="Save the Date">
 
   <h3>Need to Contact Us?</h3>
   <p>
